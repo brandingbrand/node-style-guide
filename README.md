@@ -4,37 +4,40 @@ This is a guide for writing consistent and aesthetically pleasing node.js code.
 It is inspired by what is popular within the community. It is not a 1-1 match
 to any specific example, please refrain from pointing this out.
 
++ [Rules](#rules)
++ [Editor Settings](#text-editor-settings)
 
-## 2 Spaces for indention
+## Rules
+### 2 Spaces for indention
 
 Use 2 spaces for indenting your code and swear an oath to never mix tabs and
 spaces - a special kind of hell is awaiting you otherwise.
 
-## Newlines
+### Newlines
 
 Use UNIX-style newlines (`\n`), and a newline character as the last character
 of a file. Windows-style newlines (`\r\n`) are forbidden inside any repository.
 
-## No trailing whitespace
+### No trailing whitespace
 
 Just like you brush your teeth after every meal, you clean up any trailing
 whitespace in your JS files before committing. Otherwise the rotten smell of
 careless neglect will eventually drive away contributors and/or co-workers.
 
-## Use Semicolons
+### Use Semicolons
 
 + Consider the points of [the opposition][]
 + Understand that we are simply less-likely to encounter bugs if we include them.
 
 [the opposition]: http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
 
-## 80 characters per line
+### 80 characters per line
 
 Limit your lines to 80 characters. Yes, screens have gotten much bigger over the
 last few years, but your brain has not. Use the additional room for split screen,
 your editor supports that, right?
 
-## Use single quotes
+### Use single quotes
 
 Use single quotes, unless you are writing JSON.
 
@@ -50,7 +53,7 @@ var foo = 'bar';
 var foo = "bar";
 ```
 
-## Opening braces go on the same line
+### Opening braces go on the same line
 
 Your opening braces go on the same line as the statement.
 
@@ -73,7 +76,7 @@ if (true)
 
 Also, notice the use of whitespace before and after the condition statement.
 
-## Declare one variable per var statement
+### Declare one variable per var statement
 
 Declare one variable per var statement, it makes it easier to re-order the
 lines. Ignore [Crockford][crockfordconvention] on this, and put those
@@ -108,7 +111,7 @@ while (items.length) {
 
 [crockfordconvention]: http://javascript.crockford.com/code.html
 
-## Use lowerCamelCase for variables, properties and function names
+### Use lowerCamelCase for variables, properties and function names
 
 Variables, properties and function names should use `lowerCamelCase`.  They
 should also be descriptive. Single character variables and uncommon
@@ -126,7 +129,7 @@ var adminUser = db.query('SELECT * FROM users ...');
 var admin_user = db.query('SELECT * FROM users ...');
 ```
 
-## Use UpperCamelCase for class names
+### Use UpperCamelCase for class names
 
 Class names should be capitalized using `UpperCamelCase`.
 
@@ -144,7 +147,7 @@ function bank_Account() {
 }
 ```
 
-## Use UPPERCASE for Constants
+### Use UPPERCASE for Constants
 
 Constants should be declared as regular variables or static class properties,
 using all uppercase letters.
@@ -175,7 +178,7 @@ File.fullPermissions = 0777;
 
 [const]: https://developer.mozilla.org/en/JavaScript/Reference/Statements/const
 
-## Object / Array creation
+### Object / Array creation
 
 Use trailing commas and put *short* declarations on a single line. Quote all
 keys when your interpreter complains about any one item in the object:
@@ -201,7 +204,7 @@ var b = {"good": 'code'
         };
 ```
 
-## Use the === operator
+### Use the === operator
 
 Programming is not about remembering [stupid rules][comparisonoperators]. Use
 the triple equality operator as it will work just as expected.
@@ -227,7 +230,7 @@ if (a == '') {
 
 [comparisonoperators]: https://developer.mozilla.org/en/JavaScript/Reference/Operators/Comparison_Operators
 
-## Use multi-line ternary operator
+### Use multi-line ternary operator
 
 The ternary operator should not be used on a single line. Split it up into multiple lines instead.
 
@@ -245,7 +248,7 @@ var foo = (a === b)
 var foo = (a === b) ? 1 : 2;
 ```
 
-## Do not extend built-in prototypes
+### Do not extend built-in prototypes
 
 Do not extend the prototype of native JavaScript objects. Your future self will
 be forever grateful.
@@ -272,7 +275,7 @@ if (a.empty()) {
 }
 ```
 
-## Use descriptive conditions
+### Use descriptive conditions
 
 Any non-trivial conditions should be assigned to a descriptively named variable or function:
 
@@ -295,13 +298,13 @@ if (password.length >= 4 && /^(?=.*\d).{4,}$/.test(password)) {
 }
 ```
 
-## Write small functions
+### Write small functions
 
 Keep your functions short. A good function fits on a slide that the people in
 the last row of a big room can comfortably read. So don't count on them having
 perfect vision and limit yourself to ~15 lines of code per function.
 
-## Return early from functions
+### Return early from functions
 
 To avoid deep nesting of if-statements, always return a function's value as early
 as possible.
@@ -348,7 +351,7 @@ function isPercentage(val) {
 }
 ```
 
-## Name your closures
+### Name your closures
 
 Feel free to give your closures a name. It shows that you care about them, and
 will produce better stack traces, heap and cpu profiles.
@@ -369,7 +372,7 @@ req.on('end', function() {
 });
 ```
 
-## Use slashes for comments
+### Use slashes for comments
 
 Use slashes for both single line and multi line comments. Try to write
 comments that explain higher level mechanisms or clarify difficult
@@ -413,11 +416,11 @@ if (isSessionValid) {
 }
 ```
 
-## Object.freeze, Object.preventExtensions, Object.seal, with, eval
+### Object.freeze, Object.preventExtensions, Object.seal, with, eval
 
 Crazy shit that you will probably never need. Stay away from it.
 
-## Getters and setters
+### Getters and setters
 
 Do not use setters, they cause more problems for people who try to use your
 software than they can solve.
@@ -428,9 +431,10 @@ providing a length property for a collection class.
 [sideeffect]: http://en.wikipedia.org/wiki/Side_effect_(computer_science)
 
 
-# Text Editor Settings
-Please add the following rules to your favorite text editor.
-For [SublimeText](http://www.sublimetext.com/) on a Mac, you can open your settings file via <kbd>command</kbd> + <kbd>,</kbd>
+## Text Editor Settings
++ [SublimeText](http://www.sublimetext.com/)
+  * on Mac OS, open your settings file via <kbd>command</kbd> + <kbd>,</kbd>
+  * on Windows, open your settings file via <kbd>control</kbd> + <kbd>,</kbd>
 ```json
 {
   "tab_size": 2,
