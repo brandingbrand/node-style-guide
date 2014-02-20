@@ -179,15 +179,15 @@ File.fullPermissions = 0777;
 
 ## Object / Array creation
 
-Use trailing commas and put *short* declarations on a single line. Only quote
-keys when your interpreter complains:
+Use trailing commas and put *short* declarations on a single line. Quote all
+keys when your interpreter complains about any one item in the object:
 
 *Right:*
 
 ```js
 var a = ['hello', 'world'];
 var b = {
-  good: 'code',
+  'good': 'code',
   'is generally': 'pretty',
 };
 ```
