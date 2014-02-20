@@ -278,7 +278,8 @@ Any non-trivial conditions should be assigned to a descriptively named variable 
 *Right:*
 
 ```js
-var isValidPassword = password.length >= 4 && /^(?=.*\d).{4,}$/.test(password);
+var isValidPassword = password.length >= 4
+                        && /^(?=.*\d).{4,}$/.test(password);
 
 if (isValidPassword) {
   console.log('winning');
