@@ -22,13 +22,10 @@ careless neglect will eventually drive away contributors and/or co-workers.
 
 ## Use Semicolons
 
-According to [scientific research][hnsemicolons], the usage of semicolons is
-a core values of our community. Consider the points of [the opposition][], but
-be a traditionalist when it comes to abusing error correction mechanisms for
-cheap syntactic pleasures.
++ Consider the points of [the opposition][]
++ Understand that we are simply less-likely to encounter bugs if we include them.
 
 [the opposition]: http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
-[hnsemicolons]: http://news.ycombinator.com/item?id=1547647
 
 ## 80 characters per line
 
