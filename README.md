@@ -6,6 +6,7 @@ to any specific example, please refrain from pointing this out.
 
 + [Rules](#rules)
 + [Editor Settings](#text-editor-settings)
++ [.jshintrc](https://github.com/brandingbrand/node-style-guide/blob/master/.jshintrc)
 
 ## Rules
 ### 2 Spaces for indention
