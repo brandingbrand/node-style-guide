@@ -452,3 +452,16 @@ Feel free to use getters that are free from [side effects][sideeffect], like
 providing a length property for a collection class.
 
 [sideeffect]: http://en.wikipedia.org/wiki/Side_effect_(computer_science)
+
+
+# Text Editor Settings
+Please add the following rules to your favorite text editor.
+For [SublimeText](http://www.sublimetext.com/) on a Mac, you can open your settings file via <kbd>command</kbd> + <kbd>,</kbd>
+```json
+{
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "ensure_newline_at_eof_on_save": true,
+  "trim_trailing_white_space_on_save": true
+}
+```
