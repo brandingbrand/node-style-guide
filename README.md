@@ -443,3 +443,14 @@ providing a length property for a collection class.
   "trim_trailing_white_space_on_save": true
 }
 ```
+
+## Vim Settings
++ [Vim](http://www.vim.org/)
+  * Add (or update) your .vimrc
+
+```vim
+" Two spaces, translante tabs to spaces.
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" Trim trailing white space on save
+autocmd BufWritePre *.js :%s/\s\+$//e
+```
