@@ -1,6 +1,7 @@
 # Node.js Style Guide
 
 This is a guide for writing consistent and aesthetically pleasing node.js code.
+It is inspired by what is popular within the community. It is not a 1-1 match
 to any specific example, please refrain from pointing this out.
 
 
