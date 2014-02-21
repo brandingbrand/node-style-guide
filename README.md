@@ -445,7 +445,6 @@ providing a length property for a collection class.
 }
 ```
 
-## Vim Settings
 + [Vim](http://www.vim.org/)
   * Add (or update) your .vimrc
 
