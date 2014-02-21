@@ -233,20 +233,20 @@ if (a == '') {
 
 ### Use multi-line ternary operator
 
-The ternary operator should not be used on a single line. Split it up into multiple lines instead.
+Split up the ternary operator into multiple lines, if the statement exceeds 80 characters.
 
 *Right:*
 
 ```js
-var foo = (a === b)
-  ? 1
-  : 2;
+var fluxCapacitorBatteryHorseStaple = somethingRather === false 
+    ? someResult 
+    : otherResult;
 ```
 
 *Wrong:*
 
 ```js
-var foo = (a === b) ? 1 : 2;
+var fluxCapacitorBatteryHorseStaple = somethingRather === false ? someResult : otherResult;
 ```
 
 ### Do not extend built-in prototypes
