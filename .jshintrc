@@ -10,12 +10,11 @@
   "newcap":  true,
   "undef":   true,
   "noarg":   true,
-  "unused":  true,
+  "unused":  "vars",
   "nonew":   true,
   "forin":   true,
 
   "indent":    2,
-  "camelcase": true,
   "curly":     true,
   "quotmark":  "single",
   "trailing":  true
