@@ -238,9 +238,9 @@ The ternary operator should not be used on a single line. Split it up into multi
 *Right:*
 
 ```js
-var foo = (a === b)
-  ? 1
-  : 2;
+var foo = (a === b) ?
+  1 :
+  2;
 ```
 
 *Wrong:*
